@@ -62,7 +62,7 @@ export default function Navbar() {
       }`}
     >
       <nav aria-label="Primary" className="container-x flex h-16 items-center justify-between gap-4">
-        <a href="#home" onClick={goTo('home')} className="font-display text-lg font-bold tracking-wider">
+        <a href="#home" onClick={goTo('home')} className="whitespace-nowrap font-display text-sm font-bold tracking-wider sm:text-lg">
           <span className="gradient-text">{profile.logo}</span>
         </a>
 
