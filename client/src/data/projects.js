@@ -1,0 +1,112 @@
+// Projects, taken from the resume. Optional fields:
+//   liveUrl / githubUrl : a button is shown only when a URL is set
+//   thumbnail           : image in /public, e.g. '/projects/hxm.jpg'
+
+export const projects = [
+  {
+    id: 'hxm',
+    title: 'HXM',
+    subtitle: 'AI-Powered Human Experience Management Platform',
+    kind: 'Multi-Tenant SaaS',
+    overview:
+      'An AI-powered human experience management platform built as a multi-tenant SaaS for HR operations.',
+    technologies: ['React.js', 'Redux', 'Node.js', 'Express.js', 'MongoDB', 'Redis', 'Bull', 'JWT', 'Tailwind CSS'],
+    features: [
+      'Multi-tenant architecture with tenant-level data isolation',
+      'JWT authentication with refresh token rotation (Redis), OAuth/SAML SSO and role-based, field-level permissions',
+      'Recruitment and ATS module with Kanban hiring pipeline, Google Calendar interview scheduling and funnel analytics',
+      'Travel and Expense module with multi-level approvals, per diem calculation and multi-currency support',
+    ],
+    liveUrl: '',
+    githubUrl: '',
+    thumbnail: '',
+    icon: 'Users',
+  },
+  {
+    id: 'cxm',
+    title: 'CXM',
+    subtitle: 'Customer Experience Management (Sales CRM) Platform',
+    kind: 'Professional',
+    overview:
+      'A sales CRM platform covering leads, deals, contacts, companies, tasks, calls, meetings, email, pipelines and goals.',
+    technologies: ['React.js', 'Redux', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Tailwind CSS'],
+    features: [
+      'Single lead inbox that merges imports and manual entries and removes duplicates',
+      'Deal records with stage history, weighted forecast and win-rate view',
+      'Configurable pipelines with stage probabilities on a visual board',
+      'Role-based access, record ownership rules, field masking by role and an audit trail',
+    ],
+    liveUrl: '',
+    githubUrl: '',
+    thumbnail: '',
+    icon: 'Handshake',
+  },
+  {
+    id: 'gengo',
+    title: 'Gengo Car Rentals',
+    subtitle: 'Full-Stack Car Booking Platform',
+    kind: 'Personal Project',
+    overview:
+      'A car rental platform where users browse, book and manage rentals with real-time availability and location-based discovery.',
+    technologies: ['React.js', 'Redux', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Razorpay', 'ImageKit'],
+    features: [
+      'JWT authentication with role-based access (User / Admin / Car Provider)',
+      'Admin dashboard for listings, users, bookings and analytics',
+      'Booking with date, location and car-type filters',
+      'Razorpay payments, ImageKit uploads, Nodemailer emails and GeoApify Maps',
+    ],
+    liveUrl: 'https://gen-go-car-rentals.vercel.app',
+    githubUrl: '',
+    thumbnail: '',
+    icon: 'Car',
+  },
+  {
+    id: 'tastr',
+    title: 'Tastr',
+    subtitle: 'Multi-Role Food Delivery Platform',
+    kind: 'Personal Project',
+    overview:
+      'A food delivery platform with customer, restaurant, driver and admin roles on a shared Express REST API.',
+    technologies: [
+      'React.js',
+      'Redux Toolkit',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'Socket.io',
+      'Redis',
+      'JWT',
+      'Stripe',
+      'Twilio',
+      'Tailwind CSS',
+    ],
+    features: [
+      'Restaurant discovery with filters, cart, promo codes and scheduled checkout',
+      'Stripe payments with saved cards and a wallet',
+      'Real-time order status, live driver tracking and in-order chat with Socket.io',
+      'JWT with refresh token rotation (Redis) and phone OTP verification via Twilio',
+    ],
+    liveUrl: '',
+    githubUrl: '',
+    thumbnail: '',
+    icon: 'Utensils',
+  },
+  {
+    id: 'lms',
+    title: 'LMS',
+    subtitle: 'Learning Management System Portal',
+    kind: 'Personal Project',
+    overview: 'A learning management portal with separate Admin and Student experiences.',
+    technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
+    features: [
+      'Separate Admin and Student portals with role-based access',
+      'Course creation, content uploads, enrolments and subscriptions',
+      'Students track progress and complete assessments',
+      'Admins manage courses, students and assessment dashboards',
+    ],
+    liveUrl: '',
+    githubUrl: '',
+    thumbnail: '',
+    icon: 'GraduationCap',
+  },
+]

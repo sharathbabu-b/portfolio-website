@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2400" viewBox="0 0 1600 2400" fill="none">
+  <defs>
+    <radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(0 520 -590 0 1180 490)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#28B8FF" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#28B8FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="b" cx="0" cy="0" r="1" gradientTransform="matrix(0 470 -540 0 440 1280)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7657FF" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#7657FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="c" cx="0" cy="0" r="1" gradientTransform="matrix(0 520 -610 0 1180 2070)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#28B8FF" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#28B8FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="220" x2="1390" y1="280" y2="2140" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#28B8FF"/>
+      <stop offset=".52" stop-color="#7657FF"/>
+      <stop offset="1" stop-color="#28B8FF"/>
+    </linearGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" stroke="#7D91FF" stroke-opacity=".12"/>
+    </pattern>
+    <filter id="glow" width="300%" height="300%" x="-100%" y="-100%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+  <path fill="url(#grid)" d="M0 0h1600v2400H0z" opacity=".22"/>
+  <ellipse cx="1180" cy="490" fill="url(#a)" rx="590" ry="520"/>
+  <ellipse cx="440" cy="1280" fill="url(#b)" rx="540" ry="470"/>
+  <ellipse cx="1180" cy="2070" fill="url(#c)" rx="610" ry="520"/>
+  <g stroke="url(#line)" stroke-linecap="round" stroke-width="2">
+    <path d="m160 370 210 120 190-90 180 190 190-80 250 140 210-110"/>
+    <path d="m140 700 230-210 100 270 270-170 190 230 250-140 210 70"/>
+    <path d="m180 1040 180-250 190 110 190-110 200 240 230-160 230 150"/>
+    <path d="m100 1390 220-160 230 170 190-270 230 170 210-120 300 180"/>
+    <path d="m180 1720 180-240 190 120 210-210 180 200 250-110 260 180"/>
+    <path d="m120 2070 240-190 190 150 220-190 190 190 220-120 300 190"/>
+    <path d="m260 260 100 230m380 100 0 190m560-50 80 210M360 790l-40 440m420-330 0 270m620-260 20 270M360 1480l0 240m400-210 20 210m620-240 0 260M360 1880l0 190m430-70 0 190m650-190 0 190"/>
+    <path d="M370 490c160 100 160 200 0 300m560-190c-120 160-120 300 0 450m270-170c-170 160-170 330 0 480m-840 160c150 140 150 280 0 430m570-190c130 130 130 270 0 400"/>
+  </g>
+  <g fill="#28B8FF" filter="url(#glow)" opacity=".42">
+    <circle cx="370" cy="490" r="14"/><circle cx="740" cy="590" r="14"/><circle cx="1120" cy="700" r="14"/>
+    <circle cx="360" cy="790" r="14"/><circle cx="920" cy="1030" r="14"/><circle cx="1210" cy="1230" r="14"/>
+    <circle cx="550" cy="1400" r="14"/><circle cx="1010" cy="1500" r="14"/><circle cx="1220" cy="1720" r="14"/>
+    <circle cx="610" cy="2030" r="14"/><circle cx="950" cy="2030" r="14"/><circle cx="1430" cy="2220" r="14"/>
+  </g>
+  <g fill="#AFCBFF">
+    <circle cx="160" cy="370" r="5"/><circle cx="370" cy="490" r="7"/><circle cx="560" cy="400" r="5"/>
+    <circle cx="740" cy="590" r="6"/><circle cx="930" cy="510" r="5"/><circle cx="1180" cy="650" r="7"/>
+    <circle cx="1390" cy="540" r="5"/><circle cx="370" cy="790" r="6"/><circle cx="650" cy="760" r="5"/>
+    <circle cx="920" cy="1030" r="7"/><circle cx="1150" cy="870" r="5"/><circle cx="1380" cy="1020" r="6"/>
+    <circle cx="320" cy="1230" r="6"/><circle cx="550" cy="1400" r="7"/><circle cx="780" cy="1130" r="5"/>
+    <circle cx="1010" cy="1500" r="6"/><circle cx="1220" cy="1380" r="5"/><circle cx="1520" cy="1560" r="6"/>
+    <circle cx="360" cy="1480" r="5"/><circle cx="550" cy="1600" r="5"/><circle cx="790" cy="1480" r="6"/>
+    <circle cx="970" cy="1680" r="5"/><circle cx="1220" cy="1720" r="7"/><circle cx="1480" cy="1900" r="5"/>
+    <circle cx="420" cy="1880" r="5"/><circle cx="610" cy="2030" r="7"/><circle cx="830" cy="1840" r="5"/>
+    <circle cx="950" cy="2030" r="6"/><circle cx="1170" cy="1910" r="5"/><circle cx="1430" cy="2220" r="7"/>
+  </g>
+</svg>
