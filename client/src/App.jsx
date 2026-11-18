@@ -1,3 +1,4 @@
+import { useLayoutEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
@@ -9,6 +10,27 @@ import NotFound from './pages/NotFound'
 import { scrollToSection } from './utils/scroll'
 
 export default function App() {
+  useLayoutEffect(() => {
+    const navigation = performance.getEntriesByType('navigation')[0]
+    if (navigation?.type !== 'reload' || window.location.pathname !== '/') return
+
+    window.history.scrollRestoration = 'manual'
+    window.history.replaceState(
+      window.history.state,
+      '',
+      `${window.location.pathname}${window.location.search}`,
+    )
+
+    const root = document.documentElement
+    const scrollHome = () => {
+      root.style.scrollBehavior = 'auto'
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+    }
+
+    scrollHome()
+    requestAnimationFrame(() => requestAnimationFrame(scrollHome))
+  }, [])
+
   return (
     <div className="relative isolate min-h-screen">
       <AIParallaxBackground />
